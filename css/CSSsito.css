@@ -1,0 +1,88 @@
+
+table, th, td, tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td, tr {
+  padding: 15px;
+}
+
+th {
+  text-align: center;
+}
+
+table {
+  border-spacing: 5px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+body{ 
+  background-image: url("background.jpg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.searchbar{
+  float: right;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+    
+}
+
+.searchbar > input[type=text] {
+  font-size: 15px;
+  width: 80%;
+  padding: 5px 5px;
+}
+
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+.login{
+  text-align: center;  
+  float: left;
+  background-color: #04AA6D;
+  color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  padding: 5px 5px;
+}
+
+
+button{
+    width: 60px;
+    margin: 10px;
+}
