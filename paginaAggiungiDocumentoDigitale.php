@@ -50,15 +50,15 @@ and open the template in the editor.
         
         <h3>Aggiungi un documento digitale</h3>
         <div class="container">
-        <form action="login.php" method="POST">
+            <form action="aggiungiDigitale.php" method="POST">
             <br>
             <input type="text" name="nome" placeholder="nome"><br />
             <br>
             <input type="text" name="URL" placeholder="URL"><br />
             <br>
-            <input type="password" name="applicazione_riproduzione" placeholder="applicazione di riproduzione"><br />
+            <input type="text" name="applicazione_riproduzione" placeholder="applicazione di riproduzione"><br />
             <br>
-            <input type="password" name="apparato_ausiliiario" placeholder="apparato ausiliiario"><br />
+            <input type="text" name="apparato_ausiliiario" placeholder="apparato ausiliiario"><br />
             <br>
             <input type="submit">
         </form>

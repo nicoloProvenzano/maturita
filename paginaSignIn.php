@@ -44,7 +44,7 @@
         
         <h3>Aggiungi un collaboratore</h3>
         <div class="container">
-        <form action="login.php" method="POST">
+            <form action="signIn.php" method="POST">
             <br>
             <input type="text" name="email" placeholder="email"><br />
             <br>

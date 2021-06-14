@@ -45,11 +45,11 @@ and open the template in the editor.
             <br>
             <input type="text" name="cognome" placeholder="Cognome"><br />
             <br>
-            <input type="password" name="email" placeholder="Email"><br />
+            <input type="text" name="email" placeholder="Email"><br />
             <br>
             <input type="text" name="data" placeholder="Data della prenotazione"><br />
             <br>
-            <input type="password" name="luogo" placeholder="Luogo del prestito"><br />
+            <input type="text" name="luogo" placeholder="Luogo del prestito"><br />
             <br>
             <input type="submit">
         </form>

@@ -52,15 +52,15 @@ and open the template in the editor.
         
         <h3>Modifica il documento analogico</h3>
         <div class="container">
-        <form action="login.php" method="POST">
+            <form action="modificaAnalogico.php" method="POST">
             <br>
             <input type="text" name="nome" placeholder="nome"><br />
             <br>
             <input type="text" name="caratteristiche" placeholder="caratteristiche"><br />
             <br>
-            <input type="password" name="supporto" placeholder="supporto"><br />
+            <input type="text" name="supporto" placeholder="supporto"><br />
             <br>
-            <input type="password" name="lugod_custodia" placeholder="lugo di custodia"><br />
+            <input type="text" name="lugod_custodia" placeholder="lugo di custodia"><br />
             <br>
             <input type="submit">
         </form>

@@ -75,6 +75,82 @@ and open the template in the editor.
             echo "</tr>";
         }
         
+        if($documento_digitale!==null){
+            
+            $nome=$documento_digitale["Nome documento"];
+            $idaggiornato=$documento_digitale["id_documento"];
+            
+          
+            if($nome!==null && $id!==$idaggiornato){
+            echo "<tr>";
+            
+                        $id=$idaggiornato;
+
+           echo "<td id='td'><a href='documento_digitale.php?id=$id'>" .  $nome. "</a></td>";
+            echo "</tr>";}
+        
+        while(($documento_digitale = $documenti_digitale->fetch_array(MYSQLI_ASSOC))){
+            
+            $nome=$documento_digitale["Nome documento"];
+            $idaggiornato=$documento_digitale["id_documento"];
+            
+          
+            if($nome!==null && $id!==$idaggiornato){
+            echo "<tr>";
+            
+                        $id=$idaggiornato;
+
+           echo "<td id='td'><a href='documento_digitale.php?id=$id'>" .  $nome. "</a></td>";
+            
+            echo "</tr>";}
+ 
+        }
+        }
+        
+        if($documento_analogico!==null){
+            
+            $nome=$documento_analogico["Nome documento"];
+            $idaggiornato=$documenti_analogico["id_documento"];
+            
+          
+            if($id!==$idaggiornato){
+            echo "<tr>";
+            
+                        $id=$idaggiornato;
+
+            echo "<td id='td'><a href='documento_analogico.php?id=$id'>" . $nome. "</a></td>";
+
+            
+            echo "</tr>";
+            
+            $nome=$documento_analogico["Nome documento"];
+            $id=$documento_analogico["id_documento"];    
+            
+            }
+        while($documento_analogico = $documenti_analogico->fetch_array(MYSQLI_ASSOC)){
+   
+           $nome=$documento_analogico["Nome documento"];
+           $idaggiornato=$documenti_analogico["id_documento"];
+            
+          
+            if($id!==$idaggiornato){
+            echo "<tr>";
+            
+                        $id=$idaggiornato;
+
+            echo "<td id='td'><a href='documento_analogico.php?id=$id'>" . $nome. "</a></td>";
+
+            
+            echo "</tr>";
+            
+            $nome=$documento_analogico["Nome documento"];
+            $id=$documento_analogico["id_documento"];    
+            
+            }
+        }
+        }
+        
+        
         echo '</table>';
 
 	?>
